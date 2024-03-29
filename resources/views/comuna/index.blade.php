@@ -16,7 +16,6 @@
     <h1>Listado de Comunas</h1>
     </div>
     <h1>Commune List</h1>
-     <a href="{{ route('comuna.crate') }}" class="btn btn -sucess">Add</a>
     <table class="table">
   <thead>
     <tr>
@@ -27,7 +26,7 @@
     </tr>
   </thead>
   <tbody>
-    @foreach ($$comunas as $comuna)
+    @foreach ($comunas as $comuna)
     <tr>
       <th scope="row">{{$comuna -> comu_codi }}</th>
       <td>{{$comuna -> comu_nomb }}</td>
