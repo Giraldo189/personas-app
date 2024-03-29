@@ -16,9 +16,8 @@
     <form method="POST" action = "{{ route ('comunas.store') }}">
     @csrf
   <div class="mb-3">
-    <label for="id" class="form-label">Code</label>
-    <input type="text" class="form-control" id="id" aria-describedby="idhelp" name="id"
-    disabled = "disabled">
+    <label for="id" class ="form-label">Code</label>
+    <input type="text" class="form-control" id="id" aria-describedby="idhelp" name="id">
     <div id="idHelp" class="form-text">Commune code</div>
   </div>
 
@@ -42,6 +41,6 @@
   </div>
   
 </form>
-    </div>
+  </div>
   </body>
 </html>
